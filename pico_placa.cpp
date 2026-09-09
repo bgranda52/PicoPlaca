@@ -1,5 +1,5 @@
 /*
- * Pico y placa — version corregida, estilo laboratorio (80 columnas).
+ * Pico y placa — estilo laboratorio (80 columnas).
  *
  * Regla academica clasica (Quito, la que se ensenaba en ejercicios):
  *   Lunes      -> digitos 1 y 2
