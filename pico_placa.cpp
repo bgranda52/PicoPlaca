@@ -305,7 +305,7 @@ static void mostrar_menu()
     limpiar_pantalla();
     caja_titulo();
     cout << "\n";
-    centrar("Ejercicio de consola — logica corregida", col::blanco);
+    centrar("Ejercicio de consola logica", col::blanco);
     cout << "\n";
     linea_caja('+', '-', '+');
     fila_caja("");
