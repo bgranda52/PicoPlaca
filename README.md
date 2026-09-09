@@ -2,19 +2,23 @@
 
 Ejercicio de consola de pico y placa (Quito clasico de laboratorio).
 
-Hay dos archivos:
-
-- `Pico y placa.cpp` — version original de 2017 (con errores de logica).
-- `pico_placa.cpp` — version corregida: menu, texto en espanol, colores ANSI.
+Archivo principal: `pico_placa.cpp` (menu, texto en espanol, colores ANSI).
 
 ## Compilar y ejecutar
+
+Linux / macOS / MSYS2:
 
 ```bash
 g++ -o pico_placa pico_placa.cpp
 ./pico_placa
 ```
 
-En Windows 10+ usar PowerShell o el simbolo del sistema (los colores ANSI ya funcionan).
+Windows (MSYS2 UCRT64):
+
+```bash
+g++ -o pico_placa.exe pico_placa.cpp
+./pico_placa.exe
+```
 
 ## Menu
 
