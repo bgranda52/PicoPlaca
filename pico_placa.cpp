@@ -10,7 +10,7 @@
  *   Sabado/Domingo -> sin restriccion
  * Horario restringido: 07:00-09:00 y 16:00-19:00 (hora entera).
  *
- * Colores: secuencias ANSI (Windows 10+, Linux, macOS).
+ * Colores: secuencias ANSI (Windows 10+, Linux, macOS, MSYS2).
  */
 
 #include <iostream>
@@ -22,19 +22,6 @@
 using namespace std;
 
 const int ANCHO = 80;
-
-#ifdef _WIN32
-#include <windows.h>
-static void habilitar_ansi()
-{
-    HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
-    DWORD modo = 0;
-    if (GetConsoleMode(h, &modo))
-        SetConsoleMode(h, modo | 0x0004);
-}
-#else
-static void habilitar_ansi() {}
-#endif
 
 namespace col {
     const char *reset    = "\033[0m";
@@ -320,7 +307,6 @@ static void mostrar_menu()
 int main()
 {
     ios::sync_with_stdio(false);
-    habilitar_ansi();
 
     bool seguir = true;
     while (seguir) {
